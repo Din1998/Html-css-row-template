@@ -1,0 +1,14 @@
+{
+  "name": "Din",
+  "version": "0.1.0",
+  "description": "html,sass,js template",
+  "main": "index.js",
+  "author": "Din",
+  "license": "MIT",
+  "dependencies": {
+    "gulp": "^4.0.2",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.58.3"
+  }
+}

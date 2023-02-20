@@ -1,0 +1,17 @@
+
+@import'variables';
+
+*{
+  margin: 0;
+  padding: 0;
+  background-color: $--base-page-background;
+}
+
+.nav_bar{
+  font-family: $--base-heading-Font;
+  color: $--base-heading-color;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
