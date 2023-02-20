@@ -2,7 +2,6 @@
 * {
   margin: 0;
   padding: 0;
-  background-color: #C3CEDA;
 }
 
 .nav_bar {
@@ -14,6 +13,7 @@
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #0C4160;
+  background-color: #C3CEDA;
 }
 
 nav {
@@ -30,8 +30,6 @@ nav a {
 }
 
 nav a:hover {
-  border-radius: 0.2rem;
-  background-color: #738FA7;
   transform: translateY(0.2rem);
   transition: 0.8s all;
 }
@@ -53,4 +51,63 @@ nav a:hover {
 .nav_icon a:hover {
   transform: translateY(0.2rem);
   transition: 0.5s all;
+}
+
+.hero_ui {
+  height: 32rem;
+  background-image: linear-gradient(15deg, #738FA7, #0C4160);
+  padding: 0rem 5rem;
+}
+
+.heroUi_wraper {
+  width: 100%;
+  height: 26rem;
+  padding: 3rem 0rem;
+  display: flex;
+  flex-direction: row;
+}
+
+.hero_text_content {
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.hero_text_content span {
+  color: #0C4160;
+}
+.hero_text_content h1 {
+  font-family: Poppins;
+  font-family: 600;
+  font-size: 3rem;
+  text-align: left;
+  color: #071330;
+}
+.hero_text_content p {
+  padding: 1rem 0rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  color: #0C4160;
+}
+
+.hero_btn_wraper {
+  padding: 1rem 0rem;
+}
+
+.hero_btn {
+  background: #0C4160;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.hero_btn:hover {
+  transform: translateX(0.2rem);
+  transition: 0.2s all;
+}
+
+.hero_img {
+  height: 32rem;
+  width: 32rem;
 }

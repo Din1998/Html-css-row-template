@@ -3,7 +3,7 @@
 *{
   margin: 0;
   padding: 0;
-  background-color: $--base-page-background;
+ 
 }
 
 .nav_bar{
@@ -15,12 +15,14 @@
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid $--base-btn-color;
+  background-color: $--base-page-background;
 }
 
 nav{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
+ 
   a{
     padding: 0px 12px;
     text-decoration: none;
@@ -32,8 +34,6 @@ nav{
 
 nav{
   a:hover{
-    border-radius: 0.2rem;
-    background-color: $--base-card-background;
     transform: translateY(0.2rem);
     transition: 0.8s all;
   }
@@ -60,3 +60,67 @@ nav{
     }
 }
 
+
+//Hero ui
+.hero_ui{
+  height: 32rem;
+  background-image: $--base-linear-background;
+  padding: $--base-padding;
+
+}
+
+.heroUi_wraper{
+  width: 100%;
+  height: 26rem;
+  padding: 3rem 0rem;
+  display: flex;
+  flex-direction: row;
+ 
+}
+
+.hero_text_content{
+  padding: 0rem 2rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  span{
+    color: $--base-span-color;
+  }
+
+  h1{
+    font-family: $--base-heading-Font;
+    font-family: 600;
+    font-size: 3rem;
+    text-align: left;
+    color: $--base-heading-color;
+  }
+  p{
+    padding: 1rem 0rem;
+    font-family: $--base-title-Font;
+    font-size: 1.5rem;
+    color: $--base-title-color;
+  }
+}
+
+.hero_btn_wraper{
+  padding: 1rem 0rem;
+}
+
+.hero_btn{
+  background: $--base-btn-color;
+  color: $--base-color-wht;
+  padding: $--hero-btn-padding;
+  border: none;
+  border-radius: 0.2rem;
+}
+
+.hero_btn:hover{
+  transform: translateX(0.2rem);
+  transition: 0.2s all;
+
+}
+
+.hero_img{
+  height: 32rem;
+  width: 32rem;
+}
