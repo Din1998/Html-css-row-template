@@ -1,4 +1,3 @@
-
 @import'variables';
 
 *{
@@ -8,10 +7,56 @@
 }
 
 .nav_bar{
+  height: 4rem;
   font-family: $--base-heading-Font;
   color: $--base-heading-color;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid $--base-btn-color;
 }
+
+nav{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  a{
+    padding: 0px 12px;
+    text-decoration: none;
+    color: $--base-heading-color;
+    font-size: $--base-navFont-size;
+    font-family: $--base-navFont-weight;
+  }
+}
+
+nav{
+  a:hover{
+    border-radius: 0.2rem;
+    background-color: $--base-card-background;
+    transform: translateY(0.2rem);
+    transition: 0.8s all;
+  }
+}
+
+.nav_icon{
+  width: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  a{
+    text-decoration: none;
+    color: $--base-heading-color;
+    i{
+      font-size: 1.5rem;
+    }
+  }
+}
+
+.nav_icon{
+    a:hover{
+      transform: translateY(0.2rem);
+      transition: 0.5s all;
+    }
+}
+

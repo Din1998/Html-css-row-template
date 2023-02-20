@@ -6,10 +6,51 @@
 }
 
 .nav_bar {
+  height: 4rem;
   font-family: Poppins;
   color: #071330;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
+  border-bottom: 1px solid #0C4160;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+nav a {
+  padding: 0px 12px;
+  text-decoration: none;
+  color: #071330;
+  font-size: 1.2rem;
+  font-family: 900;
+}
+
+nav a:hover {
+  border-radius: 0.2rem;
+  background-color: #738FA7;
+  transform: translateY(0.2rem);
+  transition: 0.8s all;
+}
+
+.nav_icon {
+  width: 4rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.nav_icon a {
+  text-decoration: none;
+  color: #071330;
+}
+.nav_icon a i {
+  font-size: 1.5rem;
+}
+
+.nav_icon a:hover {
+  transform: translateY(0.2rem);
+  transition: 0.5s all;
 }
