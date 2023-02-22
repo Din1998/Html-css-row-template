@@ -1,8 +1,67 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter&family=Lato&family=Poppins&display=swap");
 * {
   margin: 0;
   padding: 0;
-  background-color: #C3CEDA;
+}
+
+.hero_ui {
+  background-image: linear-gradient(15deg, #738FA7, #0C4160);
+}
+
+.heroUi_wraper {
+  padding: 3rem 0rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hero_text_content {
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: left;
+}
+.hero_text_content span {
+  color: #0C4160;
+}
+.hero_text_content h1 {
+  font-family: Poppins;
+  font-family: 600;
+  font-size: 3rem;
+  text-align: left;
+  color: #071330;
+}
+.hero_text_content p {
+  padding: 1rem 0rem;
+  font-family: Inter;
+  font-size: 1.5rem;
+  color: #0C4160;
+}
+
+.hero_img {
+  height: 520px;
+  width: 520px;
+}
+
+.hero_btn_wraper {
+  padding: 1rem 0rem;
+}
+
+.hero_btn {
+  background: #a020f0;
+  color: #ffffff;
+  padding: 1rem 2rem;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.hero_btn:hover {
+  transform: translateX(0.2rem);
+  transition: 0.2s all;
 }
 
 .nav_bar {
@@ -14,6 +73,7 @@
   justify-content: space-around;
   align-items: center;
   border-bottom: 1px solid #0C4160;
+  background-color: #C3CEDA;
 }
 
 nav {
@@ -30,8 +90,6 @@ nav a {
 }
 
 nav a:hover {
-  border-radius: 0.2rem;
-  background-color: #738FA7;
   transform: translateY(0.2rem);
   transition: 0.8s all;
 }
@@ -53,4 +111,51 @@ nav a:hover {
 .nav_icon a:hover {
   transform: translateY(0.2rem);
   transition: 0.5s all;
+}
+
+.card {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.card_body {
+  margin: 12px 0px;
+  background-color: #738FA7;
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content: space-evenly;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: 1px 3px 5px rgba(0, 0, 0, 0.5);
+  border-radius: 8px;
+}
+.card_body i {
+  font-size: 32px;
+}
+.card_body p {
+  padding: 0px 8px;
+}
+
+.feature_text_box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature_title {
+  padding: 40px 0px;
+  color: #0C4160;
+  font-size: 1.5rem;
+}
+
+.feature_content {
+  text-align: center;
+  width: 40%;
+  padding: 0px 0px 36px 0px;
+  font-size: 2rem;
+  color: #0C4160;
 }

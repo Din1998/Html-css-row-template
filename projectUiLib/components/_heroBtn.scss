@@ -1,0 +1,19 @@
+.hero_btn_wraper{
+  padding: 1rem 0rem;
+}
+
+.hero_btn{
+  background: map-get($--colors,"purple");
+  color: $--base-color-wht;
+  padding: $--hero-btn-padding;
+  border: none;
+  border-radius: 0.2rem;
+  cursor: pointer;
+}
+
+.hero_btn:hover{
+  transform: translateX(0.2rem);
+  transition: 0.2s all;
+
+}
+
