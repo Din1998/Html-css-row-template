@@ -46,6 +46,13 @@
   width: 520px;
 }
 
+.feture {
+  background: url("../Asset/about_bg.svg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 .hero_btn_wraper {
   padding: 1rem 0rem;
 }
@@ -137,7 +144,7 @@ nav a:hover {
   font-size: 32px;
 }
 .card_body p {
-  padding: 0px 8px;
+  padding: 0px 20px;
 }
 
 .feature_text_box {
@@ -148,14 +155,16 @@ nav a:hover {
 
 .feature_title {
   padding: 40px 0px;
-  color: #0C4160;
+  color: #ffffff;
   font-size: 1.5rem;
+  font-family: Inter;
 }
 
 .feature_content {
+  font-family: Poppins;
   text-align: center;
   width: 40%;
   padding: 0px 0px 36px 0px;
   font-size: 2rem;
-  color: #0C4160;
+  color: #ffffff;
 }
