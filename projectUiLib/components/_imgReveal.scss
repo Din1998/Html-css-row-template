@@ -1,0 +1,11 @@
+.discover_img{
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: all 2s ease;
+
+}
+
+.discover_img.imgActive{
+  transform: translateX(0px);
+  opacity: 1;
+}

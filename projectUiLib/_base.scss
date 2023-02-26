@@ -1,3 +1,5 @@
+@import './colors';
+
 *{
   margin: 0;
   padding: 0;
@@ -47,12 +49,203 @@
 
 
 .feture{
+  height: 100%;
+}
 
-  background: url('../Asset/about_bg.svg');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+// hero media
+@media(max-width: map-get($--breakpoint,"xl")){
+  .hero_text_content{
+    text-align: center;
+    p{
+      text-align: center;
+    }
+    h1{
+      text-align: center;
+      font-size: 24px;
+    }
+   
+    width: 100%;
+  }
+  // change flex direction
+  .heroUi_wraper{
+    padding: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .discover_section_wraper{
+    flex-wrap: wrap;
+  }
+  .discover{
+    padding: 0px 12px !important;
+  }
+  // change img size
+  .hero_img{
+    height: 340px;
+    width: 340px
+  }
+  .second{
+    flex-direction: column-reverse !important;
+  }
+  .feature_text_box{
+    h1{
+      width: 80%
+    }
+  }
+  .second_text{
+    padding: 44px 0px !important
+  }
+  .client_text_section{
+    flex-direction: column !important;
+    align-items: center;
+    padding: 0px !important;
+  }
+  .client_text{
+    padding: 40px 0px !important;
+    width: 80% !important;
 
+  }
+};
+
+
+@media(max-width: map-get($--breakpoint,"lg")){
+  .hero_text_content{
+    p{
+      padding: 0px 12px;
+    }
+    h1{
+      padding: 20px 12px;
+      font-size: 24px;
+    }
+   
+    width: 100%;
+  }
+  .heroUi_wraper{
+    padding: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .hero_img{
+    padding: 20px 0px;
+    height: 340px;
+    width: 340px
+  }
+  .discover{
+    padding: 0px 12px !important;
+  }
+  .feature_text_box{
+    h1{
+      width: 80%
+    }
+  }
+  .second{
+    flex-direction: column-reverse !important;
+    padding: 0px 12px !important;
+  }
+  .second_text{
+    padding: 44px 0px !important
+  }
+};
+
+
+//discover
+.discover{
+  height: 100%;
+  padding:  $--base-padding;
+}
+.discover_section_wraper{
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover_text{
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+
+  align-items: flex-start;
+  padding: 0px 40px;
+  span{
+    color: $--base-span-color;
+    font-family: $--base-heading-Font;
+  }
+  h1{
+    font-size: $--font-size-xl;
+    padding: $--title-padding;
+    font-family: $--base-heading-Font;
+  }
+  p{
+    padding: 8px 0px;
+    font-family: $--base-title-Font;
+    color: $--base-title-color;
+  }
+}
+
+.group_key_text{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+
+  p{
+    color: $--base-heading-color;
+  }
+}
+
+
+// client
+.client{
+
+  height: 100%;
+}
+.client_text_section{
+  padding: $--base-padding;
+  height: 440px;
+  background: $--base-btn-color;
+  display: flex;
+}
+.client_text{
+  
+  font-size: $--font-size-md;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: $--base-color-white;
+  width: 30%;
+}
+.client_key_text{
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.text_wraper{
+  h1{
+    font-size: $--font-size-xl;
+    color: $--base-color-white;
+  }
+  p{
+    color: $--base-color-white;
+  }
+}
+.client_card{
+  margin-top: -100px;
+}
+
+.portfolio{
+  height: 100%;
+  padding: 80px 0px;
+}
+
+.footer{
+  background-color: $--base-title-color;
+  height: 260px;
 }
 
 

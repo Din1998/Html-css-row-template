@@ -7,19 +7,12 @@ $--base-btn-Font: Lato;
 
 
 //base theme color
-$--base-page-background:#C3CEDA;
-$--base-heading-color: #071330;
-$--base-title-color: #0C4160;
-$--base-span-color:#0C4160;
-$--base-btn-color:#0C4160;
-$--base-card-background: #738FA7;
-$--base-color-wht:  #ffffff;
-$--base-section-text-color:#ffffff;
+
 //color plate
 
 
 //base font size
-$--base-font-size: 1rem;
+$--base-font-size: 12px;
 $--font-size-sm: $--base-font-size * 0.75;
 $--font-size-md: $--base-font-size * 1.5;
 $--font-size-lg: $--base-font-size * 2;
@@ -35,10 +28,26 @@ $--base-navFont-weight: 900;
 $--base-linear-background: linear-gradient(15deg, #738FA7,#0C4160);
 
 //section padding
-$--base-padding: 0rem 5rem;
+$--base-padding: 0px 60px;
+
+//text padding
+$--title-padding: 20px 0px;
 
 //hero button padding
 $--hero-btn-padding: 1rem 2rem;
 
 //box shadow
 $--base-shadow: 1px 3px 5px rgba(0,0,0,0.5);
+
+
+// break point
+
+$--breakpoint :(
+  "xs": 0,
+  "sm": 480px,
+  "md": 720px,
+  "lg": 960px,
+  "xl": 1060px,
+  "xxl": 1200px,
+);
+
