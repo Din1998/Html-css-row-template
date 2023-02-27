@@ -223,7 +223,7 @@ nav a:hover {
   transition: 0.5s all;
 }
 
-.ham__menu {
+.nav_bar .ham__menu {
   display: none;
   cursor: pointer;
 }
