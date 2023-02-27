@@ -43,5 +43,13 @@ function imgReveal() {
 }
 
 
+const hamBargerMenu = document.querySelector('.ham__menu');
+
+hamBargerMenu.onclick = function() {
+  navBar = document.querySelector('.nav_items');
+  navBar.classList.toggle('active')
+}
+
+
 
 
