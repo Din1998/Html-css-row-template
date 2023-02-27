@@ -56,22 +56,16 @@ nav{
     }
 }
 
-.nav_bar i{
+.ham__menu{
   display: none;
   cursor: pointer;
 }
 
 
 @media(max-width: map-get($--breakpoint,"lg")){
-  .hero_ui{
-    height: 100%;
-    padding: 80px 0px;
-  }
+ 
   
   .nav_bar i{
-    .ham__menu{
-      text-align: left;
-    }
 
     display:flex;
 
@@ -98,6 +92,7 @@ nav{
 
   .nav_items{
     a{
+      padding: 32px 0px;
       cursor: pointer;
     }
   }
@@ -110,7 +105,8 @@ nav{
   }
 
     .active{
-      height: 450px;
+
+      height: auto;
       opacity: 0.8;
     }
 
