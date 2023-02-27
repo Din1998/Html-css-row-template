@@ -229,8 +229,9 @@ nav a:hover {
 }
 
 @media (max-width: 960px) {
-  .nav_bar i {
-    display: flex;
+  .nav_bar .ham__menu {
+    display: block;
+    cursor: pointer;
   }
   .nav_items {
     position: absolute;
