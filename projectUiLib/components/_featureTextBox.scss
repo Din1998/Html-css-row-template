@@ -5,16 +5,17 @@
 }
 
 .feature_title{
-  padding: 40px 0px;
-  color: $--base-title-color;
+  padding: $--title-padding;
+  color: $--base-heading-color;
   font-size: $--font-size-md;
+  font-family: $--base-title-Font;
 }
 
 .feature_content{
+  font-family: $--base-heading-Font;
   text-align: center;
   width: 40%;
   padding: 0px 0px 36px 0px;
   font-size: $--font-size-lg;
   color: $--base-title-color;
-
 }

@@ -1,10 +1,12 @@
+
+
 .hero_btn_wraper{
   padding: 1rem 0rem;
 }
 
 .hero_btn{
-  background: map-get($--colors,"purple");
-  color: $--base-color-wht;
+  background: #a020f0;
+  color: $--base-color-white;
   padding: $--hero-btn-padding;
   border: none;
   border-radius: 0.2rem;

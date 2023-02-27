@@ -46,13 +46,120 @@
   width: 520px;
 }
 
+.feture {
+  padding: 80px 0px;
+  height: 100%;
+}
+
+.discover {
+  height: 100%;
+  padding: 0px 60px;
+}
+
+.discover_section_wraper {
+  padding: 80px 0px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.discover_text {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 0px 40px;
+}
+.discover_text span {
+  color: #0C4160;
+  font-family: Poppins;
+}
+.discover_text h1 {
+  font-size: 36px;
+  padding: 20px 0px;
+  font-family: Poppins;
+}
+.discover_text p {
+  padding: 8px 0px;
+  font-family: Inter;
+  color: #0C4160;
+}
+
+.group_key_text {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+.group_key_text p {
+  color: #071330;
+}
+
+.client {
+  height: 100%;
+}
+
+.client_text_section {
+  padding: 0px 60px;
+  height: 440px;
+  background: #0C4160;
+  display: flex;
+}
+
+.client_text {
+  font-size: 18px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  width: 30%;
+}
+
+.client_key_text {
+  width: 70%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+.text_wraper h1 {
+  font-size: 36px;
+  color: #fff;
+}
+.text_wraper p {
+  color: #fff;
+}
+
+.client_card {
+  margin-top: -100px;
+}
+
+.portfolio {
+  height: 100%;
+  padding: 80px 0px;
+}
+
+.footer {
+  background-color: #0C4160;
+  height: 260px;
+}
+
+.index {
+  height: 100px;
+  width: 200px;
+  background: #0000ff;
+}
+
 .hero_btn_wraper {
   padding: 1rem 0rem;
 }
 
 .hero_btn {
   background: #a020f0;
-  color: #ffffff;
+  color: #fff;
   padding: 1rem 2rem;
   border: none;
   border-radius: 0.2rem;
@@ -105,7 +212,7 @@ nav a:hover {
   color: #071330;
 }
 .nav_icon a i {
-  font-size: 1.5rem;
+  font-size: 18px;
 }
 
 .nav_icon a:hover {
@@ -137,7 +244,7 @@ nav a:hover {
   font-size: 32px;
 }
 .card_body p {
-  padding: 0px 8px;
+  padding: 0px 20px;
 }
 
 .feature_text_box {
@@ -147,15 +254,124 @@ nav a:hover {
 }
 
 .feature_title {
-  padding: 40px 0px;
-  color: #0C4160;
-  font-size: 1.5rem;
+  padding: 20px 0px;
+  color: #071330;
+  font-size: 18px;
+  font-family: Inter;
 }
 
 .feature_content {
+  font-family: Poppins;
   text-align: center;
   width: 40%;
   padding: 0px 0px 36px 0px;
-  font-size: 2rem;
+  font-size: 24px;
   color: #0C4160;
+}
+
+.reveal {
+  position: relative;
+  transform: translateY(150px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.reveal.active {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.discover_img {
+  transform: translateX(-300px);
+  opacity: 0;
+  transition: all 2s ease;
+}
+
+.discover_img.imgActive {
+  transform: translateX(0px);
+  opacity: 1;
+}
+
+@media (max-width: 1060px) {
+  .hero_text_content {
+    text-align: center;
+    width: 100%;
+  }
+  .hero_text_content p {
+    text-align: center;
+  }
+  .hero_text_content h1 {
+    text-align: center;
+    font-size: 24px;
+  }
+  .heroUi_wraper {
+    padding: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .discover_section_wraper {
+    flex-wrap: wrap;
+  }
+  .discover {
+    padding: 0px 12px !important;
+  }
+  .discover_text {
+    padding: 44px 16px;
+  }
+  .hero_img {
+    height: 340px;
+    width: 340px;
+  }
+  .second {
+    flex-direction: column-reverse !important;
+  }
+  .feature_text_box h1 {
+    width: 80%;
+  }
+  .client_text_section {
+    flex-direction: column !important;
+    align-items: center;
+    padding: 0px !important;
+  }
+  .client_text {
+    padding: 40px 0px !important;
+    width: 80% !important;
+  }
+}
+@media (max-width: 960px) {
+  .hero_text_content {
+    width: 100%;
+  }
+  .hero_text_content p {
+    padding: 0px 12px;
+  }
+  .hero_text_content h1 {
+    padding: 20px 12px;
+    font-size: 24px;
+  }
+  .heroUi_wraper {
+    padding: 0px;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+  .hero_img {
+    padding: 20px 0px;
+    height: 320px;
+    width: 300px;
+  }
+  .discover {
+    padding: 0px 12px !important;
+  }
+  .feature_text_box h1 {
+    width: 80%;
+  }
+  .second {
+    flex-direction: column-reverse !important;
+    padding: 0px 12px !important;
+  }
+  .second_text {
+    padding: 44px 16px !important;
+  }
 }
