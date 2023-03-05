@@ -154,6 +154,14 @@
   background: #0000ff;
 }
 
+.footer_wraper {
+  height: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+
 .hero_btn_wraper {
   padding: 1rem 0rem;
 }
